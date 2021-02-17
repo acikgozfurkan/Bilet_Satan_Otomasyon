@@ -26,7 +26,7 @@ namespace Bilet_Satan_Otomasyon
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tablo.Rows.Add(textBox1.Text, textBox2.Text, textBox3.Text, comboBox1.Text);
+            tablo.Rows.Add(textBox1.Text, textBox2.Text, textBox3.Text, comboBox1.Text,textBox4.Text, comboBox2.Text, comboBox3.Text);
             dataGridView1.DataSource = tablo;
         }
 
@@ -36,6 +36,9 @@ namespace Bilet_Satan_Otomasyon
             tablo.Columns.Add("Soyad", typeof(string));
             tablo.Columns.Add("yas", typeof(int));
             tablo.Columns.Add("Cinsiyet", typeof(string));
+            tablo.Columns.Add("Telefon", typeof(double));
+            tablo.Columns.Add("Kalkiş Yeri", typeof(string));
+            tablo.Columns.Add("Varış Yeri", typeof(string));
             dataGridView1.DataSource = tablo;
         }
     }
